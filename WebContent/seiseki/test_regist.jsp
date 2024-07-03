@@ -1,8 +1,8 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:import url="/base.jsp">
+
     <c:param name="title">
-       得点管理システム
+       成績管理一覧
     </c:param>
     <c:param name="scripts"></c:param>
 
@@ -51,9 +51,33 @@
                <button class="btn btn-secondary" id="filter-button">検索</button>
                </div>
               </from>
+              <c:choose>
+                  <c:when test="${subject.cd()>0}">
+                      <h2>科目:${subject.cd()}回目</h2>
+                      <table class="table table-hover">
+                           <tr>
+                               <th>入学年度</th>
+                               <th>クラス</th>
+                               <th>学生番号</th>
+                               <th>氏名</th>
+                               <th class="text-input">点数</th>
+                           </tr>
+                           <c:forEach var="student" items="${students}">
+                               <tr>
+                                   <td>${student.entYear}</td>
+                                   <td>${student.classNum}</td>
+                                   <td>${student.no}</td>
+                                   <td>${student.name}</td>
+                                   <td class="text-input">point_${学生番号}</td>
+
+                           </c:forEach>
+                        </table>
+                    </c:when>
+               </c:choose>
+
          </section>
      </c:param>
-</c:import>
+
 
 
 
