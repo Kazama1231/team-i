@@ -39,7 +39,7 @@
                    </select>
                </div>
                <div class="col-4">
-                    <th class="form-th" for="student-f4-select">回目</th>
+                    <th class="form-th" for="student-f4-select">回数</th>
                     <select class="form-select" id="student-f4-select" name="f4">
                         <option value="0">------</option>
                         <c:forEach var="num" items="${num_set}">
@@ -68,7 +68,8 @@
                                    <td>${student.classNum}</td>
                                    <td>${student.no}</td>
                                    <td>${student.name}</td>
-                                   <td class="text-input">point_${学生番号}</td>
+                                   <input type="text" name="point_${学生番号}"><br>]
+                                   <input type="button" value="登録して終了">
 
                            </c:forEach>
                         </table>
