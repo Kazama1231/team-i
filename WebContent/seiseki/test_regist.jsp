@@ -1,12 +1,12 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<c:import url="/base.jsp">
     <c:param name="title">
        成績管理一覧
     </c:param>
     <c:param name="scripts"></c:param>
 
-    <c:param name="content">
+    <c:param name="body">
         <section class="me-4">
             <h2 class="h3 mb-3 fw-norma bg-secondary bg-opacity-10 py-2 px-4">成績管理</h2>
             <from method="get">
@@ -68,16 +68,22 @@
                                    <td>${student.classNum}</td>
                                    <td>${student.no}</td>
                                    <td>${student.name}</td>
-                                   <input type="text" name="point_${学生番号}"><br>]
-                                   <input type="button" value="登録して終了">
+                                   <input type="text" name="point_${学生番号}"><br>
+                                   <input type="button" value="登録して終了" id="myButton">
+                                   <s>
 
+                                   const button = document.getElementById("myButton");
+                                   button.addEventListener("click", function() {
+                                   alert("ボタンがクリックされました！");
                            </c:forEach>
                         </table>
                     </c:when>
                </c:choose>
 
          </section>
-     </c:param>
+     </c:param>>
+</c:import>
+
 
 
 
