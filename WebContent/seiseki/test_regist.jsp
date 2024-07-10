@@ -20,6 +20,7 @@
                         </c:forEach>
                    </select>
                </div>
+
                <div class="col-4">
                     <th class="form-th" for="student-f2-select">クラス</th>
                     <select class="form-select" id="student-f2-select" name="f2">
@@ -60,7 +61,7 @@
                                <th>クラス</th>
                                <th>学生番号</th>
                                <th>氏名</th>
-                               <th class="text-input">点数</th>
+                               <th>点数</th>
                            </tr>
                            <c:forEach var="student" items="${students}">
                                <tr>
@@ -68,13 +69,9 @@
                                    <td>${student.classNum}</td>
                                    <td>${student.no}</td>
                                    <td>${student.name}</td>
-                                   <input type="text" name="point_${学生番号}"><br>
-                                   <input type="button" value="登録して終了" id="myButton">
-                                   <s>
+                                   <td><input type="text" name="point_${学生番号}"></td>
+                                   <p><input type="button" value="登録して終了"></p>
 
-                                   const button = document.getElementById("myButton");
-                                   button.addEventListener("click", function() {
-                                   alert("ボタンがクリックされました！");
                            </c:forEach>
                         </table>
                     </c:when>
@@ -83,6 +80,7 @@
          </section>
      </c:param>>
 </c:import>
+
 
 
 

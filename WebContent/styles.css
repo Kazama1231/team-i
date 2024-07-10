@@ -1,5 +1,8 @@
-.h2 {
+.h2{
     display:  block;            /* ブロック要素にする */
     background-color:  #ccc;    /* 背景色指定 */
     padding:  10px;             /* 余白指定 */
+}
+.me-4{
+
 }
