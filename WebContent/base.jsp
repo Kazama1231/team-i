@@ -1,6 +1,5 @@
 <%@page contentType="text/html; charset=UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,14 +30,14 @@
 
 	<div id="container">
 		<div id="sidebar">
-			<h2>メニュー</h2>
-			<div>成績管理</div>
+			<a href="menu">メニュー</a><br>
+			<a href="all">学生管理</a><br>
+			<label>成績管理</label>
 			<ul>
-				<li><a href="all">学生一覧</a></li>
-				<li><a href="insert">学生追加</a></li>
-				<li><a href="update-select">学生更新</a></li>
-				<li><a href="delete">学生削除</a></li>
+				<li><a href="all">成績登録</a></li>
+				<li><a href="insert">成績参照</a></li>
 			</ul>
+			<a href="all">科目管理</a>
 		</div>
 		<div id="body">${ param.body }</div>
 	</div>
