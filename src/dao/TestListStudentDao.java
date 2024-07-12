@@ -1,5 +1,7 @@
 package dao;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -26,6 +28,12 @@ public class TestListStudentDao extends DAO {
 		return list;
 	}
 	public List<TestListStudent> filter(Student student) throws Exception{
+		List<TestListStudent> list = new ArrayList<>();
+		Connection con = getConnection();
+
+		PreparedStatement st = con.prepareStatement("SELECT * FROM test WHERE Student_no=?");
+		
+		
 
 	}
 

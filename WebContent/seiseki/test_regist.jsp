@@ -1,6 +1,7 @@
 <%@page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:import url="/base.jsp">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<c:import url="../base.jsp">
     <c:param name="title">
        成績管理一覧
     </c:param>
@@ -52,6 +53,7 @@
                <button class="btn btn-secondary" id="filter-button">検索</button>
                </div>
               </from>
+
               <c:choose>
                   <c:when test="${subject.cd()>0}">
                       <h2>科目:${subject.cd()}回目</h2>
@@ -78,7 +80,8 @@
                </c:choose>
 
          </section>
-     </c:param>>
+     </c:param>
+
 </c:import>
 
 
