@@ -1,5 +1,7 @@
 <%@page contentType="text/html; charset=UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<%@include file="../header.html" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +26,8 @@
 		padding-top: 1rem;
 		padding-left: 2rem;
 	}
+
+}
 </style>
 </head>
 <body>
@@ -44,3 +48,4 @@
 
 </body>
 </html>
+<%@include file="../footer.html" %>
