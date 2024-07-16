@@ -38,8 +38,8 @@
 			<a href="all">学生管理</a><br>
 			<label>成績管理</label>
 			<ul>
-				<li><a href="all">成績登録</a></li>
-				<li><a href="insert">成績参照</a></li>
+				<li><a href="test_regist">成績登録</a></li>
+				<li><a href="kamoku">成績参照</a></li>
 			</ul>
 			<a href="all">科目管理</a>
 		</div>

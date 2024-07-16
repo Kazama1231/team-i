@@ -6,20 +6,11 @@
     <c:param name="title">
        成績管理一覧
     </c:param>
-<style>
-	#form-th{
-    display: inline-block;
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    }
-</style>
-
     <c:param name="scripts"></c:param>
 
     <c:param name="body">
         <section class="me-4">
-            <h2 class="h3 mb-3 fw-norma bg-secondary bg-opacity-10 py-2 px-4">成績管理</h2>
+            <h2 class="h3 mb-3 fw-norma bg-secondary bg-opacity-10 py-2 px-4"style="padding: 10px; margin-bottom: 10px; text-align: center;  background-color: #D3D3D3; color: #111111;">成績管理</h2>
             <from method="get">
             <div class="row border mx-3 mb-3 py-2 align-items-center rounded" id="filter"></div>
                 <div class="col-4">
