@@ -1,15 +1,18 @@
 package dao;
 
+import java.io.Serializable;
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import bean.Student;
 import bean.TestListStudent;
 
-public class TestListStudentDao extends DAO {
+public class TestListStudentDao extends DAO implements Serializable{
 	private String baseSql;
 	private List<TestListStudent> postFilter(ResultSet rSet) throws Exception{
 		List<TestListStudent> list = new ArrayList<>();
@@ -32,9 +35,10 @@ public class TestListStudentDao extends DAO {
 		Connection con = getConnection();
 
 		PreparedStatement st = con.prepareStatement("SELECT * FROM test WHERE Student_no=?");
-		
-		
+
+
 
 	}
+	return list;
 
 }

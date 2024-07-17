@@ -13,7 +13,7 @@ public class TestRegistExecuteAction extends HttpServlet {
 	req.setAttribute("message", message);
 
 	// jspにフォワード
-	req.getRequestDispatcher("insert_out.jsp").forward(req, resp);
+	req.getRequestDispatcher("test_regist.jsp").forward(req, resp);
 }
 
 
