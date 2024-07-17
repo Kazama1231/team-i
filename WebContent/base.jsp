@@ -9,6 +9,8 @@
 <title>${ param.title }</title>
 <style>
 	#container{
+	    margin: -8px 10;
+	    padding: 10px;
 		width: 100%;
 		height: 600px;
 		display: flex;
@@ -38,7 +40,7 @@
 			<a href="all">学生管理</a><br>
 			<label>成績管理</label>
 			<ul>
-				<li><a href="test_regist">成績登録</a></li>
+				<li><a href="Test_regist">成績登録</a></li>
 				<li><a href="kamoku">成績参照</a></li>
 			</ul>
 			<a href="all">科目管理</a>
