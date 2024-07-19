@@ -34,6 +34,8 @@
 </head>
 <body>
 
+<!-- commit -->
+
 	<div id="container">
 		<div id="sidebar">
 			<a href="menu">メニュー</a><br>
