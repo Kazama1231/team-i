@@ -29,7 +29,7 @@
 		padding-left: 2rem;
 	}
 
-}
+}t
 </style>
 </head>
 <body>
